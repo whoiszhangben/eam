@@ -1,0 +1,33 @@
+[http]
+ListenPort=8080
+Httpdir=../web/dist/spa
+
+[log]
+Maxlines = 10              ;log文件最大行数
+Maxsize = 1024             ;log文件大小限制
+Isdebug= true
+
+[database]
+Type = mysql
+User = root
+Password = abcd1234
+Host = 127.0.0.1
+Port = 3306
+DbName = assets
+BackupPeriod = 7     ;单位为天， 如果不填写则为7
+BackupPath  = ./dbbackup
+
+;BackupPeriod = 1 1周备份一次， 2：一个月备份一次
+
+[redis]
+Host = 127.0.0.1
+Port = 6379
+Password =
+
+[mqtt]
+Host = 127.0.0.1
+Port = 1883
+Account= hk
+Password= abcd1234
+ClinetId = service01
+Timeout = 30

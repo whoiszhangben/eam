@@ -1,0 +1,19 @@
+syntax = "proto3";
+option go_package = "./printm;printm";
+
+
+service Printm{
+    rpc PrintQr(PrintMsg) returns(PrintResult);
+}
+
+message PrintMsg{
+    int32  id = 1;
+    string savelocation = 2;
+    string organization =3;
+}
+
+message PrintResult{
+    int32 id = 1;
+    bool result = 2;
+    string  strerror = 3;
+}

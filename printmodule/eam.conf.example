@@ -1,0 +1,14 @@
+[mqtt]
+Host = 127.0.0.1
+Port = 1883
+Account=
+Password=
+ClientId = sz_client
+ClientName = sz
+Timeout = 30
+
+
+[label]
+Width = 40
+Height = 30
+; width：签纸的宽度， 单位 mm，  height：签纸的高度， 单位mm
